@@ -23,7 +23,7 @@ npm install lambda-piper
 var lambdaPiper = require('lambda-piper');
 
 var piper = new lambdaPiper({
-    region: 'us-east-1',
+    region: 'aws region',
     accessKeyId: 'your key',
     secretAccessKey: 'your secret',
     options: {
