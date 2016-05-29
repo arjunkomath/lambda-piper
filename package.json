@@ -1,7 +1,7 @@
 {
-  "name": "piper",
+  "name": "lambda-piper",
   "version": "0.0.1",
-  "description": "Pipe lambda functions",
+  "description": "Pipes and filter using lambda functions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
