@@ -1,0 +1,16 @@
+{
+  "name": "piper",
+  "version": "0.0.1",
+  "description": "Pipe lambda functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arjun Komath <arjunkomath@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.0-rc.5",
+    "aws-sdk": "^2.3.16",
+    "bluebird": "^3.4.0"
+  }
+}
