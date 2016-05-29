@@ -10,3 +10,43 @@ Use the Pipes and Filters architectural style to divide a larger processing task
 Lambda Piper allows you to create a linear pipeline using AWS Lambda functions. You can pipe several Lambda function with an initial input. Lambda piper will invoke the first function with the initial input, then get the result of that function and feed it as the input to next function and this pipeline continues, finally returning the results of the last function.
 
 ![Pipeline](http://i.imgur.com/DH9Oa2K.jpg)
+
+## Install
+
+```
+npm install lambda-piper
+```
+
+## Usage
+
+```javascript
+var lambdaPiper = require('lambda-piper');
+
+var piper = new lambdaPiper({
+    region: 'us-east-1',
+    accessKeyId: 'your key',
+    secretAccessKey: 'your secret',
+    options: {
+        debug: false
+    }
+});
+```
+
+If debug is set to true, result of every lambda function will be logged to console.
+
+### Pipe function
+```
+piper.pipe(<Array of function names>, <Initital input>, <Callback>);
+```
+Example:
+```javascript
+piper.pipe(['test1', 'test2'], {
+    key3: 1
+}, function (err, data) {
+    console.log(err || data);
+});
+```
+
+First function `test1` will be executed with the initial input, the output of that function is passed as input to the next function `test2` and finally the callback is called.
+
+NOTE. If any of the function throws error, the pipeline execution will be stopped immediately.
