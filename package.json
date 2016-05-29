@@ -1,6 +1,6 @@
 {
   "name": "lambda-piper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Pipe-And-Filter using lambda functions",
   "main": "index.js",
   "scripts": {
