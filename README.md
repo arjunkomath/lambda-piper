@@ -52,7 +52,7 @@ First function `test1` will be executed with the initial input, the output of th
 NOTE. If any of the function throws error, the pipeline execution will be stopped immediately.
 
 ## About Author
-* Built with <3 by Arjun Komath / [arjunkomath@gmail.com](mailto:arjunkomath@gmail.com)
+Built with <3 by Arjun Komath / [arjunkomath@gmail.com](mailto:arjunkomath@gmail.com)
 
 ## License
-- See the [LICENSE](https://github.com/arjunkomath/Feline-for-Product-Hunt/blob/master/LICENSE) file for license rights and limitations (MIT).
+See the [LICENSE](https://github.com/arjunkomath/lambda-piper/blob/master/LICENSE.md) file for license rights and limitations (MIT).
