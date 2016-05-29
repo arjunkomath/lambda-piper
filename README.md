@@ -9,7 +9,7 @@ Use the Pipes and Filters architectural style to divide a larger processing task
 
 Lambda Piper allows you to create a linear pipeline using AWS Lambda functions. You can pipe several Lambda function with an initial input. Lambda piper will invoke the first function with the initial input, then get the result of that function and feed it as the input to next function and this pipeline continues, finally returning the results of the last function.
 
-![Pipeline](http://i.imgur.com/DH9Oa2K.jpg)
+![Pipeline](http://i.imgur.com/pHGjn5h.jpg)
 
 ## Install
 
